@@ -47,7 +47,7 @@ def getWeather():
     
     
     #Weather API Key and URL.
-    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=imperial&exclude=hourly&appid=edd1d56dc87020dcc2f055e1779c4808"
+    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=imperial&exclude=hourly&appid={API KEY}"
     json_data = requests.get(api).json() #Sends a request to get the data from the API
     
     #It gets the current temperature, humidity, pressure, wind speed and description of the weather from the API
